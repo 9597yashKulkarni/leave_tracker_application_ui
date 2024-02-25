@@ -1,0 +1,51 @@
+.homeScreen {
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+
+    .register-login {
+        height: 60vh;
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px solid #bf2100;
+        border-radius: 1.5rem;
+
+        @media screen and (max-width: 800px) {
+            height: 50vh;
+            width: 80vw;
+          }
+
+        .sectionButtons{
+            border-bottom: 3px solid #bf2100;
+            font-weight: 500;
+
+            .active {
+                background-color: #bf2100;
+                color: white;
+            }
+
+            .top-border-radius-right {
+                border-top-right-radius: 1.3rem;
+            }
+
+            .top-border-radius-left {
+                border-top-left-radius: 1.3rem;
+            }
+
+            .loginCta:hover{
+                background-color: #bf2100;
+                color: white;
+                border-top-left-radius: 1.3rem;
+            }
+
+            .registerCta:hover{
+                background-color: #bf2100;
+                color: white;
+                border-top-right-radius: 1.3rem;
+            }
+        }
+    }
+}
